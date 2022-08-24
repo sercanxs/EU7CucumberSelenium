@@ -7,16 +7,15 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
 
-    public LoginPage(){
+    public LoginPage() {
         PageFactory.initElements(Driver.get(), this);
     }
 
-    @FindBy(id="prependedInput")
+    @FindBy(id = "prependedInput")
     public WebElement userName;
 
 
-
-    @FindBy(id="prependedInput2")
+    @FindBy(id = "prependedInput2")
     public WebElement password;
 
     @FindBy(name = "_submit")
